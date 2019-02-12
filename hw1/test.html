@@ -2,22 +2,22 @@
 <html lang="en"> 
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script> 
 $(document).ready(function(){
 $("#b1").click(function(){
 	$("h1").css('color', 'green');
 	$("h1").animate({'color':'green', 'font-size': '50px'},1000).animate({'color':'green', 'font-size': '30px'}, 1000);
 	$("img").css('border', "solid 0px purple").animate({borderWidth: 20},1000).animate({borderWidth: 4},1000);
-
+    });
 });
-});
-
 </script> 
-</head>
+
 <link rel="stylesheet" type="text/css" href="format.css">
 <meta charset="utf-8">
 <title>CIS 128 HW 1A</title>
 <meta name="CIS 128 HW 1A" content="simple web page with Jason's Bio">
+</head>
 
 <body>
 <h1 class="last">Simple HTML & CSS Page </h1>
@@ -29,7 +29,6 @@ include cooking, robotics, <br/>and swimming.</p>
 <br/>
 <br/>
 <br/>
-
 
 <p> 
 I am attending this class to learn how to develop mobile applications and web pages.
@@ -60,6 +59,7 @@ Resources
 		<a href ="https://www.w3schools.com/html/default.asp"> w3schools</a> - HTML and CSS Tutorials
 		</li>
 	</ul>
+
 <button id="b1">Animate</button>
 
 </body>
