@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Bar</title>
+    <!-- the three things that jQuery Mobile needs to work -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+<style>
+.myicon .ui-btn { padding-top: 40px !important; }
+.myicon .ui-btn:after { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+#like:after { background:  url("freeicons/sample-321-like.png") 50% 50% no-repeat; background-size: 26px 26px; }
+#bank:after { background:  url("freeicons/sample-394-bank.png") 50% 50% no-repeat; background-size: 29px 26px;  }
+#dog:after { background:  url("freeicons/sample-504-doghouse.png") 50% 50% no-repeat;  background-size: 28px 28px; }
+#truck:after { background:  url("freeicons/sample-316-truck.png") 50% 50% no-repeat;  background-size: 32px 20px; }
+#test:after { background:  url("freeicons/sample-405-test-tube.png") 50% 50% no-repeat;  background-size: 16px 28px; }
+</style>
+</head>
+<body>
+
+    <section id="p1" data-role="page">
+        <div data-role="header">
+  <h1>I'm a header for Page 1</h1>
+    <a href="#" data-icon="gear" class="ui-btn-right">Settings</a>
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#" data-icon="grid">One</a></li>
+            <li><a href="#" data-icon="arrow-l">Two</a></li>
+            <li><a href="#" data-icon="home">Three</a></li>
+        </ul>
+    </div><!-- /navbar -->
+         </div>
+
+		 <div data-role="navbar">
+    <ul>
+        <li><a href="#" class="ui-btn-active ui-state-persist">One</a></li>
+        <li><a href="#p2">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+        <li><a href="#">Five</a></li>
+        <li><a href="#">Six</a></li>
+        <li><a href="#">Seven</a></li>
+        <li><a href="#">Eight</a></li>
+        <li><a href="#">Nine</a></li>
+        <li><a href="#">Ten</a></li>
+    </ul>
+</div><!-- /navbar -->
+		 <div data-role="content">
+            <p>Page 1 to use navigation bar</p>
+        </div>
+		
+<div data-role="footer" class="myicon">
+    <div data-role="navbar" class="myicon" data-grid="d">
+    <ul>
+        <li><a href="#" id="like" data-icon="custom">Like</a></li>
+        <li><a href="#" id="bank" data-icon="custom">Money</a></li>
+		<li><a href="#" id="dog" data-icon="custom">House</a></li>
+        <li><a href="#" id="truck" data-icon="custom">Transp</a></li>
+		<li><a href="#" id="test" data-icon="custom">Tests</a></li>
+    </ul>
+    </div>
+</div>		
+    </section>
+
+    <section id="p2" data-role="page">
+       <div data-role="header">
+  <h1>I'm a header for Page 2</h1>
+    <a href="#" data-icon="gear" class="ui-btn-right">Settings</a>
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#" data-icon="grid">One</a></li>
+            <li><a href="#" data-icon="arrow-l">Two</a></li>
+            <li><a href="#" data-icon="home">Three</a></li>
+        </ul>
+    </div><!-- /navbar -->
+         </div>
+		 		 <div data-role="navbar">
+    <ul>
+        <li><a href="#p1">One</a></li>
+        <li><a href="#" class="ui-btn-active ui-state-persist">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+        <li><a href="#">Five</a></li>
+        <li><a href="#">Six</a></li>
+        <li><a href="#">Seven</a></li>
+        <li><a href="#">Eight</a></li>
+        <li><a href="#">Nine</a></li>
+        <li><a href="#">Ten</a></li>
+    </ul>
+</div><!-- /navbar -->
+        <div data-role="content">
+            <p>Page 2 to use navigation bar</p>
+        </div>
+    </section>
+</body>
+</html>

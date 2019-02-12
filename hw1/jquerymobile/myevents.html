@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Touch Events Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   <script>  <!-- script for using with jquery mobile version 1.4.4 -->
+        $(document).one("pagecreate", function (evt) {
+            $(document).on("tap", function (e) {
+                alert("Tapped!");
+            });
+
+            $(document).on("swiperight", function (e) {
+                alert("Swipe Right!");
+            });
+
+            $(document).on("swipeleft", function (e) {
+                alert("Swipe left!");
+            });
+            $(document).on("scrollstop", function (e) {
+                alert("Scroll stopped");
+            });
+        });
+
+    </script>	
+<!--    <script>
+        $("#p1").live('pageinit', function (evt) {
+            $("#p1").bind("tap", function (e) {
+                alert("Tapped!");
+            });
+
+            $("#p1").bind("swiperight", function (e) {
+                alert("Swipe Right!");
+            });
+
+            $("#p1").bind("swipeleft", function (e) {
+                alert("Swipe left!");
+            });
+            $(document).bind("scrollstop", function (e) {
+                alert("Scroll stopped");
+            });
+        });
+
+    </script> -->
+</head>
+<body>
+
+    <section id="p1" data-role="page">
+        <header data-role="header">
+        <h1>Example Using Touch Events</h1>
+        </header>
+        <div data-role="content">
+        <p>This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling. This is content for the only page of this site. More content to force scrolling.</p>
+        </div>
+        <footer data-role="footer">Playing with Touch Events</footer>
+    </section>
+</body>
+</html>

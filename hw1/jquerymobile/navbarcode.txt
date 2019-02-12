@@ -1,0 +1,19 @@
+        <nav data-role="navbar">
+        <ul>
+            <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="plus">One</a></li>
+            <li><a href="#p2" data-icon="minus">Two</a></li>
+            <li><a href="#" data-icon="check">Three</a></li>
+            <li><a href="#" data-icon="grid">Four</a></li>
+        </ul>
+        </nav>
+
+
+
+        <nav data-role="navbar">
+        <ul>
+            <li><a href="#p1" data-icon="plus">One</a></li>
+            <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="minus">Two</a></li>
+            <li><a href="#" data-icon="check">Three</a></li>
+            <li><a href="#" data-icon="grid">Four</a></li>
+        </ul>
+        </nav>

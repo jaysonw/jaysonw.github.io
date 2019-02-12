@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Basics Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+    <section id="page1" data-role="page">
+        <header data-role="header">
+        <h1>Example using Forms</h1>
+        </header>
+        <div data-role="content">
+        <form method="get" action="#">
+            <fieldset class="ui-field-contain">
+    		    <label for="address">Address:</label>
+			    <input type="text" name="address" id="address" value="" placeholder="Your Address"/>
+    		    <label for="people">People with you:</label>
+			    <input type="number" name="people" id="people" value="" placeholder="# people with you"/>
+			    <label for="traveldt">Date to Travel: </label>
+			    <input type="date" name="traveldt" id="traveldt" value="" placeholder="Date to Travel"/>
+			    <label for="email">Email: </label>
+			    <input type="email" name="email" id="email" value="" placeholder="Your Email"/>
+
+            </fieldset>
+            <div class="ui-field-contain">
+			    <label for="search">Tell us about you!</label>
+			    <input type="search" name="search" id="search" value="" placeholder="Search the site"/>
+            </div>
+            <div class="ui-field-contain">
+			    <label for="details">Tell us about you!</label>
+            	<textarea id="details"></textarea>
+            </div>
+            <div class="ui-field-contain">
+    		    <label for="ts1">Toggle Switch:</label>
+		      <select name="ts1" id="ts1" data-role="slider">
+                         <option value="On">On</option>
+                         <option value="Off">Off</option>
+                      </select>
+            </div>
+
+            <fieldset data-role="controlgroup" data-type="horizontal">
+            	<legend>Gender:</legend>
+    		    <label for="male">Male</label>
+			    <input type="radio" name="gender" id="male" value="male"/>
+    		    <label for="female">Female</label>
+			    <input type="radio" name="gender" id="female" value="female" checked="checked"/>
+            </fieldset>
+
+            <fieldset data-role="controlgroup" data-type="horizontal">
+            	<legend>Group:</legend>
+    		    <label for="arts">Arts</label>
+			    <input type="radio" name="Arts" id="arts" value="arts" checked="checked"/>
+    		    <label for="sport">Sport</label>
+			    <input type="radio" name="Arts" id="sport" value="sport"/>
+            </fieldset>
+            <fieldset data-role="controlgroup">
+            	<legend>Agree to the terms:</legend>
+    		    <label for="cb1">I agree</label>
+            	<input type="checkbox" name="cb1" id="cb1" />
+            </fieldset>
+            <fieldset data-role="controlgroup">
+            	<legend>Adventures:</legend>
+    		    <label for="surf">Surfing</label>
+            	<input type="checkbox" name="surf" id="surf" />
+    		    <label for="bike">Biking</label>
+            	<input type="checkbox" name="bike" id="bike" />
+    		    <label for="hike">Hiking</label>
+            	<input type="checkbox" name="hike" id="hike" />
+    		    <label for="game">Group Games</label>
+            	<input type="checkbox" name="game" id="game" />
+            </fieldset>
+<select name="prefcontact" id="prefcontact">
+   <option value="tel">Telephone</option>
+   <option value="email">Email</option>
+   <option value="letter" disabled="disabled">Postal</option>
+</select>
+
+        </form>
+        </div>
+    </section>
+</body>
+</html>

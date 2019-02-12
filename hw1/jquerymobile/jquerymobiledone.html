@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <!-- This is the first page -->
+    <section id="page1" data-role="page">
+        <header data-role="header">
+        <h1>My Header</h1>
+        </header>
+        <div data-role="content">
+        <p>This is the first page of our web app.</p>
+
+        <p><a href="#page2">Second Page</a></p>
+		<p><a href="extpage1.html" rel="external">Link to External Page 1</a></p>
+		<p><a href="extpage2.html" rel="external">Link to External Page 2</a></p>
+        </div>
+        <footer data-role="footer">My footer</footer>
+    </section>
+
+    <!-- This is the second page -->
+    <div id="page2" data-role="page" data-theme="b">
+        <header data-role="header">
+        <h1>Page 2 Header</h1>
+        </header>
+        <div data-role="content">
+        <p>This is the second page of our web app.</p>
+        <p><a href="#page1">Go to first page</a></p>
+        </div>
+        <div data-role="footer">Page 2 Footer</div>
+    </div>
+</body>
+</html>

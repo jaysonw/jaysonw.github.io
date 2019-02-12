@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <!-- This is the first page -->
+    <section id="page1" data-role="page">
+        <header data-role="header">
+        <h1>My Header</h1>
+        </header>
+        <div data-role="content">
+        <p>This is the first page of our web app.</p>
+
+        <a href="#page2" class="ui-btn">Second Page</a>
+		<a href="extpage1.html" rel="external" data-role="button" class="ui-btn-right">Link to External Page 1</a>
+		<a href="extpage2.html" rel="external" class="ui-btn">Link to External Page 2</a>
+		<a href="http://www.google.com" class="ui-btn">Google Website</a>	
+<p><a href="#page2" data-transition="fade">Fade to second page</a></p>
+<p><a href="#page2" data-transition="flip">Flip to second page</a></p>
+<p><a href="#page2" data-transition="pop">Pop to second page</a></p>
+<p><a href="#page2" data-transition="slide">Slide to second page</a></p>
+<p><a href="#page2" data-transition="slidedown">Slide down to second page</a></p>
+<p><a href="#page2" data-transition="slideup">Slide up to second page</a></p>		
+        </div>
+        <footer data-role="footer">My footer</footer>
+    </section>
+
+    <!-- This is the second page -->
+    <div id="page2" data-role="page" data-theme="b">
+        <header data-role="header">
+        <h1>Page 2 Header</h1>
+        </header>
+        <div data-role="content">
+        <p>This is the second page of our web app.</p>
+        <p><a href="#page1">Go to first page</a></p>
+        </div>
+        <div data-role="footer">Page 2 Footer</div>
+    </div>
+</body>
+</html>

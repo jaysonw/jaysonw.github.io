@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Changing Default Configurations</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- script here to catch the mobileinit event -->
+    <script>
+    $(document).bind("mobileinit", function(evt) {
+    	alert("mobileinit fired");
+
+    	// Change some settings
+    	$.mobile.defaultPageTransition = "turn";
+    	$.mobile.defaultDialogTransition = "flip";
+    	$.mobile.pageLoadErrorMessage = "Houston, we have a problem!";
+    });
+    </script>
+
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+	<!-- <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script> -->
+</head>
+<body>
+
+    <section id="p1" data-role="page">
+        <header data-role="header">
+        <h1>Header</h1>
+        </header>
+        <div data-role="content">
+        <p>My first page content</p>
+        <p><a href="#p2">second page</a></p>
+        <p><a href="nopage.html">Go to error page</a></p>
+        </div>
+        <footer data-role="footer">Footer</footer>
+    </section>
+
+    <section id="p2" data-role="page">
+        <header data-role="header">
+        <h1>Header Page 2</h1>
+        </header>
+        <div data-role="content">
+        <p>My page 2</p>
+        <a href="#p1">first page</a>
+        </div>
+        <footer data-role="footer">Footer Page 2</footer>
+    </section>
+</body>
+</html>

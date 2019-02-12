@@ -1,0 +1,6 @@
+<p><a href="#page2" data-transition="fade">Fade to second page</a></p>
+<p><a href="#page2" data-transition="flip">Flip to second page</a></p>
+<p><a href="#page2" data-transition="pop">Pop to second page</a></p>
+<p><a href="#page2" data-transition="slide">Slide to second page</a></p>
+<p><a href="#page2" data-transition="slidedown">Slide down to second page</a></p>
+<p><a href="#page2" data-transition="slideup">Slide up to second page</a></p>
