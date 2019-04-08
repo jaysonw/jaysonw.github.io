@@ -1,0 +1,58 @@
+
+
+body {
+  background-color: lightblue;
+  margin: auto;
+  width: 50%;
+}
+
+h1 {
+  color: darkblue;
+  text-align: center;
+}
+
+h4{
+  text-align: center;
+}
+
+button{
+  color:black;
+}
+
+.responsive {
+  width: 65%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center{
+  text-align: center;
+}
+
+
+.footer {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: blue
+}
+
+.button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 1% 1%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  float: center;
+}
+
+.button:hover {
+  background-color: navy;
+}
