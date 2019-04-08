@@ -35,7 +35,7 @@ button{
 
 .footer {
   text-align: center;
-  font-size: 100%;
+  font-size: 120%;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -47,7 +47,7 @@ button{
   background-color: blue;
   border: none;
   color: white;
-  padding: 1% 1%;
+  padding: 2% 2%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
