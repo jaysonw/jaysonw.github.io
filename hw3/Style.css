@@ -20,7 +20,7 @@ button{
 }
 
 .responsive {
-  width: 65%;
+  width: 55%;
   max-width: 500px;
   height: auto;
   display: block;
@@ -47,7 +47,7 @@ button{
   background-color: blue;
   border: none;
   color: white;
-  padding: 1% 2%;
+  padding: 1.5% 1.5%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
