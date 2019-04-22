@@ -11,25 +11,23 @@
 </head>
 <body>
 
-<p>Click the button to get your coordinates.</p>
-
-<button onclick="getLocation()">Try It</button>
-
-<p id="demo"></p>
+<p>Here are your coordinates: </p>
+<br>
+<p id="coords"></p>
 
 <script>
-var x = document.getElementById("demo");
+getLocation();
 
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
+    document.getElementById("coords").innerHTML = "Geolocation is not supported by this browser.";
   }
 }
 
 function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  document.getElementById("coords").innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude;
 }
 </script>
