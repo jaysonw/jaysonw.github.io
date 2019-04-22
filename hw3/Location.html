@@ -11,9 +11,11 @@
 </head>
 <body>
 
-<h1>Location</h1>
-<p>When we open our store, we will let you know our location here even with directions from you place to it!!!</p> 
+<p>Click the button to get your coordinates.</p>
+
 <button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
 
 <script>
 var x = document.getElementById("demo");
@@ -31,6 +33,7 @@ function showPosition(position) {
   "<br>Longitude: " + position.coords.longitude;
 }
 </script>
+
 
 <footer class = "footer">
   <button onclick="window.location.href = 'index.html';" class="button">Home</button>
