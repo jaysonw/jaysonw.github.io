@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+<h1>Welcome.</h1>
+<p>This is the desktop version of my web page!</p>
+
+<script>
+    if(WURFL.form_factor === "Smartphone" && WURFL.is_mobile === true){
+        window.location.replace("mobile.html");
+    }
+   
+<h3><u>Glossary:</u></h3>
+<dl>
+    <dt><b>complete_device_name:</b></dt>
+    <dd>- determines the client's complete device name (i.e. Google Chrome, Microsoft Edge, ...).</dd>
+
+<br>
+
+    <dt><b>form_factor:</b></dt>
+    <dd>- determines the client's device type (i.e. Desktop, Smartphone, ...).</dd>
+
+<br>
+
+    <dt><b>is_mobile:</b></dt>
+    <dd>- determines if the client's device is a mobile device (i.e. if mobile, returns as "true", otherwise returns as "false").</dd>
+</dl>
+
+</body>
+</html>

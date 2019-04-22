@@ -11,10 +11,26 @@
 </head>
 <body>
 
-<div>
-  <h1>Location</h1>
-  <p>When we open our store, we will let you know our location here even with directions from you place to it!!!</p> 
-</div>
+<h1>Location</h1>
+<p>When we open our store, we will let you know our location here even with directions from you place to it!!!</p> 
+<button onclick="getLocation()">Try It</button>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
 
 <footer class = "footer">
   <button onclick="window.location.href = 'index.html';" class="button">Home</button>
