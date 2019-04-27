@@ -11,29 +11,32 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body class="white">
   
 
 <h1>Index</h1>
 
 <p>Main characteristics of PWA: Full responsiveness and brower compatability, Connectivity independence, App-like interface, Push notifications, self-updates, Safety, Discoverability and easy installation, Web App manifest, service worker</p>
 
-<select name = "color">
-  <option value="White">Background Color</option>
-  <option value="lightBlue" class = "lightBlue">Light Blue</option>
-  <option value="lightGold">Light Gold</option>
-</select>
+<form>
+  Select Background Color:
+  <select id="mySelect">
+    <option value="lightBlue">Light Blue</option>
+    <option value="lightGold">Light Gold</option>
+  </select>
+</form>
+
+<button type="button" onclick="myFunction()">Select</button>
 
 <script>
-
-  if (0){
-    document.body.style.backgroundImage = "url('Background/lightblue.jpg')"; 
+function myFunction() {
+  if(document.getElementById("mySelect").value == "lightBlue"){
+    document.body.style.background = "url('Background/lightblue.jpg')";
   }
-</script>
-
-
-
-<script>
+  if(document.getElementById("mySelect").value == "lightGold"){
+    document.body.style.background = "url('Background/lightgold.jpg')";
+  }
+}
 </script>
 
 

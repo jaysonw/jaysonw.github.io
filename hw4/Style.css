@@ -23,6 +23,13 @@ button{
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
+.white{
+  background-color: white;
+  margin: auto;
+  width: 80%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
 .responsive {
   width: 55%;
   max-width: 500px;
