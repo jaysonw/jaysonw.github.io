@@ -1,4 +1,4 @@
-var CACHE_VERSION = 'myapp-v1';
+var CACHE_VERSION = 'myapp-v2';
 
 var CACHE_FILES = [
 'Background',
