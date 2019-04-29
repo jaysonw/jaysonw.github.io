@@ -12,7 +12,8 @@ var CACHE_FILES = [
   'Toys/crab.jpg',
   'Toys/dollhouse.jpg',
   'Toys/lego.jpg',
-  'Toys/train.jpg'
+  'Toys/train.jpg',
+  'Toys/face.jpeg'
 ];
 
 
