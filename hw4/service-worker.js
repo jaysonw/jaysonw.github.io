@@ -2,8 +2,19 @@ var CACHE_VERSION = 'myapp-v2';
 
 var CACHE_FILES = [
 
-'app.js',
-'Style.css',];
+
+  'app.js',
+
+  'Style.css',
+  'Background/lightblue.jpg',
+  'Background/lightgold.jpg',
+  'Toys/cat.jpg',
+  'Toys/crab.jpg',
+  'Toys/dollhouse.jpg',
+  'Toys/face.jpeg',
+  'Toys/lego.jpg',
+  'Toys/train.jpg'
+];
 
 
 
