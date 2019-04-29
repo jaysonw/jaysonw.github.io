@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    
+<meta charset="UTF-8">
+    
+<title>Service Worker offline demo</title>
+    
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<div>
+
+<h1>Learning About Service Workers</h1>
+
+<p><img src="images/offline.png" alt="offline icon">A simple static page to demonstrate the use of service workers</p>
+
+</div>
+
+
+
+<form>
+  Select Background Color:
+  <select id="mySelect">
+    <option value="lightBlue">Light Blue</option>
+    <option value="lightGold">Light Gold</option>
+  </select>
+</form>
+
+<button type="button" onclick="myFunction()">Select</button>
+
+<script>
+function myFunction() {
+  if(document.getElementById("mySelect").value == "lightBlue"){
+    document.body.style.background = "url('images/lightblue.jpg')";
+  }
+  if(document.getElementById("mySelect").value == "lightGold"){
+    document.body.style.background = "url('images/lightgold.jpg')";
+  }
+}
+</script>
+
+</body>
+
+
+<script src="app.js">
+if (navigator.serviceWorker){
+  navigator.serviceWorker.register(‘./service-worker.js’, {scope: ‘./about’}).then(function(registration) {// Registration of service worker okconsole.log(‘Registration of service worker successful with scope: ‘, registration.scope);}).catch(function(err) {// Registration of service worker failedconsole.log(‘Registration of service worker failed with error: ‘, err);})} else {console.log(‘Service Worker is not supported by this browser’);}
+</script>
+
+</html>
