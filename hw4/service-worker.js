@@ -1,9 +1,9 @@
 var CACHE_VERSION = 'myapp-v2';
 
 var CACHE_FILES = [
-'Background',
+
 'app.js',
-'Style.css', 'Toys'];
+'Style.css',];
 
 
 
