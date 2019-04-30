@@ -13,7 +13,12 @@ var CACHE_FILES = [
   'Toys/dollhouse.jpg',
   'Toys/lego.jpg',
   'Toys/train.jpg',
-  'Toys/face.jpeg'
+  'Toys/face.jpeg',
+  'Home.html',
+  'ContactUs.html',
+  'Location.html',
+  'Products.html',
+  'Index.html'
 ];
 
 
