@@ -10,23 +10,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="app.js"></script>
-  <script> 
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js')
-      .then(function(registration) {
-      console.log('Registration successful, scope is:', registration.scope);
-    })
-    .catch(function(error) {
-      console.log('Service worker registration failed, error:', error);
-    });
-    }
-  self.addEventListener('install', function(event) {
-    // Perform some task
-});
-self.addEventListener('activate', function(event) {
-  // Perform some task
-});
-  </script>
 </head>
 
 <body class="white">
@@ -34,7 +17,18 @@ self.addEventListener('activate', function(event) {
 
 <h1>Index</h1>
 
-<p>Main characteristics of PWA: Full responsiveness and brower compatability, Connectivity independence, App-like interface, Push notifications, self-updates, Safety, Discoverability and easy installation, Web App manifest, service worker</p>
+<p>Main characteristics of PWA</p>
+
+<ul>
+  <li>Full rsponsiveness and browser compatability</li>
+  <li>Connectivity independence</li>
+  <li>Push Notifications</li>
+  <li>Self-updates</li>
+  <li>Safety</li> 
+  <li>Discoverability and easy installation</li>
+  <li>Web App manifest</li>
+  <li>Service worker</li>
+</ul>
 
 <form>
   Select Background Color:
